@@ -1,0 +1,140 @@
+.contact-section {
+  padding: 6rem 0;
+  background: var(--bg-dark);
+}
+
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-intro h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-intro p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+
+  min-width: 0; /* Importante para flexbox */
+  overflow: hidden; /* Esconde o que transbordar */
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.15);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  min-width: 0; /* Permite que o elemento encolha menor que seu conteúdo */
+  flex: 1; /* Faz o elemento ocupar o espaço disponível */
+  overflow: hidden; /* Esconde overflow */
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-value {
+  color: var(--text-primary);
+  font-weight: 500;
+
+  word-break: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word; /* Alternativa moderna */
+  hyphens: auto; /* Adiciona hifens automaticamente */
+}
+
+.social-section {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.social-section h4 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  text-decoration: none;
+  min-width: 100px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px) scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
+}
+
+.social-icon {
+  font-size: 2rem;
+}
+
+.social-name {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
